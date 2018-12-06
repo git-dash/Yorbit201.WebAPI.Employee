@@ -1,0 +1,17 @@
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.Test.deps.json
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.Test.runtimeconfig.json
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.Test.runtimeconfig.dev.json
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.Test.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.csprojAssemblyReference.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.csproj.CoreCompileInputs.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.AssemblyInfoInputs.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.AssemblyInfo.cs
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.Test.pdb
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\bin\Debug\netcoreapp2.1\Employee.Repository.pdb
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.csproj.CopyComplete
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository.Test\obj\Debug\netcoreapp2.1\Employee.Repository.Test.pdb

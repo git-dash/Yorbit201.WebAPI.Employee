@@ -1,0 +1,14 @@
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\bin\Debug\netcoreapp2.1\Employee.Repository.deps.json
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\bin\Debug\netcoreapp2.1\Employee.Repository.runtimeconfig.json
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\bin\Debug\netcoreapp2.1\Employee.Repository.runtimeconfig.dev.json
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\bin\Debug\netcoreapp2.1\Employee.Repository.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\bin\Debug\netcoreapp2.1\Employee.Repository.pdb
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.csprojAssemblyReference.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.csproj.CoreCompileInputs.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.RazorAssemblyInfo.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.RazorAssemblyInfo.cs
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.AssemblyInfoInputs.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.AssemblyInfo.cs
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.RazorTargetAssemblyInfo.cache
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.dll
+C:\Users\v-dadega\source\repos\Yorbit201.WebAPI.Employee\Employee.Repository\obj\Debug\netcoreapp2.1\Employee.Repository.pdb

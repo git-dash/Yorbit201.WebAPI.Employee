@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Employee.Repository.Controllers;
 using Employee.Repository.Services;
 using Employee.Repository.Models;
 using Xunit;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace Employee.Repository.Test
 {
-    public class PostEndPointsTest
+    public class PutEndPointsTest
     {
 
         EmployeeController _controller;
         EmployeeServiceFake _service;
 
-        public PostEndPointsTest()
+        public PutEndPointsTest()
         {
             _service = new EmployeeServiceFake();
             _controller = new EmployeeController(_service);
@@ -58,6 +55,23 @@ namespace Employee.Repository.Test
             var badResult = _controller.AddEmployee(newEmployee);
             Assert.IsType<BadRequestObjectResult>(badResult);
         }
+        [Fact]
+        public void AddEmployee_ReturnsBadResultForDuplicateUser()
+        {
+            EmployeeEntity newEmployee = new EmployeeEntity
+            {
+                Id = Guid.NewGuid(),
+                FullName = "t1",
+                Password = "t1",
+                Username = "t1",
+                EmailID = "t1@gmail.com"
+
+            };
+            
+
+            var badResult = _controller.AddEmployee(newEmployee);
+            Assert.IsType<BadRequestObjectResult>(badResult);
+        }
 
         [Fact]
         public void checkLogin_ReturnsOkResult()
@@ -82,7 +96,7 @@ namespace Employee.Repository.Test
         {
 
             Guid TestGuid = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200");
-            var okResult = _controller.Remove(TestGuid) as OkObjectResult;
+            var okResult = _controller.Remove(TestGuid.ToString()) as OkObjectResult;
             Assert.Equal(200, okResult.StatusCode);
             Assert.Equal("Employee data deleted successfully", okResult.Value);
         }
@@ -91,7 +105,7 @@ namespace Employee.Repository.Test
         {
             Guid TestGuid = new Guid("ab2cd817-98cd-4cf3-a80a-53ea0cd9c200");
 
-            var badResult = _controller.Remove(TestGuid) as ObjectResult;
+            var badResult = _controller.Remove(TestGuid.ToString()) as ObjectResult;
 
             Assert.IsType<NotFoundObjectResult>(badResult);
             Assert.Equal(404, badResult.StatusCode);

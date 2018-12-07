@@ -8,7 +8,7 @@ using Employee.Repository.Models;
 using Employee.Repository.Services;
 namespace Employee.Repository.Controllers
 {
-    [Route("api/[controller]")]
+    // [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
@@ -41,9 +41,10 @@ namespace Employee.Repository.Controllers
         /// <returns>Employee</returns>
         [HttpGet("{id}")]
         [Route("api/EmpMgt/getByEmpId")]
-        public ActionResult<EmployeeEntity> GetEmployeeById(Guid id)
+        public ActionResult<EmployeeEntity> GetEmployeeById([FromQuery]string id)
         {
-            var item = _service.GetById(id);
+            var testId = new Guid(id);
+            var item = _service.GetById(testId);
 
             if (item == null)
             {
@@ -61,7 +62,7 @@ namespace Employee.Repository.Controllers
         /// <returns>ok if user is authenticate else 403</returns>
         [HttpPost]
         [Route("api/EmpMgt/checkLogin")]
-        public IActionResult PostCheckLogin([FromBody]string username, [FromBody]string password)
+        public ActionResult PostCheckLogin(string username, string password)
         {
 
             var user = _service.checkLogin(username, password);
@@ -80,31 +81,36 @@ namespace Employee.Repository.Controllers
         [Route("api/EmpMgt/addEmp")]
         public ActionResult AddEmployee([FromBody] EmployeeEntity value)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 //return BadRequest(ModelState);
-                return BadRequest("Input Data Mismatch or Username already Exist");
+                var item = _service.Add(value);
+
+                if (item == null)
+                    return BadRequest("Input Data Mismatch or Username already Exist");
+                else
+                   return  Ok("Employee data inserted successfully.");
+
+                //return CreatedAtAction("Get", new { id = item.Id }, item);
             }
-            
-            var item = _service.Add(value);
-
-            //return CreatedAtAction("Get", new { id = item.Id }, item);
-
-            return Ok("Employee data inserted successfully.");
+            return BadRequest("Input Data Mismatch or Username already Exist");
         }
 
         // DELETE api/shoppingcart/5
-        [HttpDelete("{id}")]
-        public ActionResult Remove(Guid id)
+        [HttpPut("{id}")]
+        [Route("api/EmpMgt/deleteEmp")]
+        public ActionResult Remove([FromQuery] string id)
         {
-            var existingItem = _service.GetById(id);
+            var testId = new Guid(id);
+            var existingItem = _service.GetById(testId);
+            
 
             if (existingItem == null)
             {
                 return NotFound("Invalid User Id");
             }
 
-            _service.Remove(id);
+            _service.Remove(testId);
             return Ok("Employee data deleted successfully");
         }
 

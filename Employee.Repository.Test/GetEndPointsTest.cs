@@ -49,21 +49,21 @@ namespace Employee.Repository.Test
         [Fact]
         public void GetEmployeeById_WhenCalled_ReturnsOkResult()
         {
-            var testId = new Guid("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200");
+            var testId = new string("ab2bd817-98cd-4cf3-a80a-53ea0cd9c200");
 
             // Act
             var okResult = _controller.GetEmployeeById(testId).Result as OkObjectResult;
 
             // Assert
             Assert.IsType<EmployeeEntity>(okResult.Value);
-            Assert.Equal(testId, (okResult.Value as EmployeeEntity).Id);
+            Assert.Equal(testId, (okResult.Value as EmployeeEntity).Id.ToString());
 
         }
 
         [Fact]
         public void GetEmployeeById_WhenCalled_ReturnsNotFoundResult()
         {
-            var testId = new Guid("ababd817-98cd-4cf3-a80a-53ea0cd9c200");
+            var testId = new string("ababd817-98cd-4cf3-a80a-53ea0cd9c200");
 
             // Act
             var NotFoundResult = _controller.GetEmployeeById(testId).Result as ObjectResult;
